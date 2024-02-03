@@ -1,1 +1,31 @@
+Main Landing:
+
+So of course the title "Relokida" at the top left.
+
+Then I'd like a video that plays without user intervention that shows all the enticing features and eye catching elements of the domes, how it's constructed, framing, endoskeleton.
+
+Below that, a summation of Relokida, dwelling systems aligned with nature etc.
+
+Below that, maybe another video element demonstrating how it's printed, how the parts fit together. Then another short summation of that process. Designed, printed, assembled.
+
+Then three images "beauty shots" of the domes, in natural environment renders,
+
+Below that a top view and with a sub header, "see our models".
+
+Below that will be a shot of the community of Relokida, and a list of socials to connect, maybe just one main social. And a link to the project location github.
+
+Models List:
+
+So a simple image and sub header listing the Omaka, Selo and Abba.
+
+Another format could be, one where, rather than listing the individual "models", we could have configurations, fitted for dwelling styles, make it that much easier for people to choose the type of offering. Studio, or single family home,
+
+Yeah, so that's a better option, is giving them, type of living styles and then a preassembled dwelling to fit the need rather than being like "here you go" with the parts. The easier we can make it the better.
+
+Model:
+
+An image of the model, followed by sub header description, specifications.
+
+Below that, a 3d render they can move around, look at from all angles.
+__
 We'll use the farm.bot landing page as our template, to gather ideas on the best present the models, provide interactable examples. We can use this site as a means of then transferring it over to other presentables.
