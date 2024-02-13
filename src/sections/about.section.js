@@ -20,7 +20,7 @@ and overbearing construction costs, that fits your style.
 			` });
 		
 		// video of beautiful domes, the architecture, the 3d printing
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/0_squared.png" });
 
 		props.method.ui.text({ body: `
 ### What makes Relokida different?
@@ -32,7 +32,7 @@ only designed to ensnare.
 
 
 		// image or video square of assemble process, 3d printing
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/13_squared.png" });
 
 		props.method.ui.text({ body: `
 ### Assembled like a tent, rigid like a house, fit for any environment.
@@ -42,11 +42,11 @@ strong and rigid, ready for challenging weather conditions, or simply bluesky da
 		` });
 
 		// beauty shots of dome renders in natural environments, trees, mountains, lakes, streams.
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/21_squared.png" });
 
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/29_squared.png" });
 
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/41_squared.png" });
 
 props.method.ui.text({ body: `
 ### Ready to find a geodesic home that fits your unique living style?
@@ -62,7 +62,7 @@ we've got you covered, and sheltered.
 		});
 
 		// video of community 
-		props.method.ui.image({ src: "/placeholder.jpg" });
+		props.method.ui.image({ src: "/sections/landing/17_squared.png" });
 
 props.method.ui.text({ body: `
 ### Solving the housing dilemma together, one triangle at a time.

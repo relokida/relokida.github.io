@@ -1,6 +1,6 @@
 {
-  "short_name": "Relokida",
-  "name": "Relokida",
+  "short_name": "Candeek",
+  "name": "Candeek",
   "icons": [
     {
       "src": "icon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "rgba(0,56,89,255)",
-  "background_color": "rgba(0,56,89,255)"
+  "theme_color": "rgb(22, 132, 184)",
+  "background_color": "rgb(22, 132, 184)"
 }
