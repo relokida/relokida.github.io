@@ -6,7 +6,7 @@ module.exports = function(props) {
 	});
 
 	element.option({ label: "🍬 Home" }, () => {
-		props.routes.home();
+		props.routes.about();
 	});
 
 	element.option({ label: "📱 Install Mobile" }, () => {
