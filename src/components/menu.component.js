@@ -5,8 +5,12 @@ module.exports = function(props) {
 		
 	});
 
-	element.option({ label: "🍬 Home" }, () => {
-		props.routes.about();
+	element.option({ label: "🌍 Home" }, () => {
+		props.routes.landing();
+	});
+
+	element.option({ label: "🌿 Dwellings" }, () => {
+		props.routes.dwellings();
 	});
 
 	element.option({ label: "📱 Install Mobile" }, () => {

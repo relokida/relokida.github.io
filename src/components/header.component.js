@@ -6,7 +6,7 @@ module.exports = function(props) {
 	header.style({ backgroundColor: "rgba(0, 0, 0, 0)", cursor: "pointer", userSelect: "none" });
 	setTimeout(() => {
 		document.getElementById(`element-${header.props._id}`).onclick = function() {
-			props.routes.about();
+			props.routes.landing();
 		}
 	}, 100);
 }

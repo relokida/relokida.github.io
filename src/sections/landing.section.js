@@ -5,53 +5,71 @@ module.exports = function(props) {
 
     var state = {}
 
-    function register() {
-		// route to permissions section
-		props.method.routes.permissions();
+    function init() {
     }
 
-	function init() {}
-
 	function render() {
-		const header = props.method.ui.text({ body: `
-# Candeek
-	` });
-	
-		header.style({ backgroundColor: "rgba(0, 0, 0, 0)", userSelect: "none" });
+		props.method.components.Header({ ui: props.method.ui, routes: props.method.routes }); 
+		props.method.components.Menu({ ui: props.method.ui, routes: props.method.routes });
 
 		props.method.ui.text({ body: `
-### Like a flame to a candle, connect with locals and illuminate your surroundings.
-
-Hear the buzz and find the fuzz, without leaving the comfort of anonymity.
-		` });
-
-		const getStartedTop = props.method.ui.selection();
-		getStartedTop.option({ label: "Get Started" }, () => {
-			register();
-		});
-
-		props.method.ui.image({ src: "/sections/landing/campfire.jpg" });
-
-		props.method.ui.text({ body: `
-### Get a birds eye view of your social surroundings.
-
-Candeek offers a neutral place for others to speak freely, with local anonymous chat and posting.
-		` });
-
-		props.method.ui.image({ src: "/sections/landing/mountains.jpg" });
-
-	props.method.ui.text({ body: `
-### Talk direct and candid, if not candied with another.
+### Affordable, Scaleable, Liveable
 		
-Candeek offers an anonymous one on one chat to connect face to face if actually faceless conversation.
+Old innovations, new packaging, meet the geodesic dwellings of the future liberated from traditional 
+and overbearing construction costs, that fits your style.
+			` });
+		
+		// video of beautiful domes, the architecture, the 3d printing
+		props.method.ui.image({ src: "/sections/landing/0_squared.png" });
+
+		props.method.ui.text({ body: `
+### What makes Relokida different?
+
+Housing that is altogether aligned with our anthropological roots, governed not by the power of 
+banking entities, but that of which is affordable, sustainable and decentralizing from conventions 
+only designed to ensnare.
 		` });
 
-		props.method.ui.image({ src: "/sections/landing/walking.jpg" });
 
-		const getStartedBottom = props.method.ui.selection();
-		getStartedBottom.option({ label: "Get Started" }, () => {
-			register();
+		// image or video square of assemble process, 3d printing
+		props.method.ui.image({ src: "/sections/landing/13_squared.png" });
+
+		props.method.ui.text({ body: `
+### Assembled like a tent, rigid like a house, fit for any environment.
+
+Each piece fits together like lego blocks, to form repeating patterns of triangles, and a structure that is 
+strong and rigid, ready for challenging weather conditions, or simply bluesky days.
+		` });
+
+		// beauty shots of dome renders in natural environments, trees, mountains, lakes, streams.
+		props.method.ui.image({ src: "/sections/landing/21_squared.png" });
+
+		props.method.ui.image({ src: "/sections/landing/29_squared.png" });
+
+		props.method.ui.image({ src: "/sections/landing/41_squared.png" });
+
+props.method.ui.text({ body: `
+### Ready to find a geodesic home that fits your unique living style?
+
+Find a model that suits you, whether you're lounging solo, or in need of a family unit, 
+we've got you covered, and sheltered.
+		` });
+
+		const selectLiving = props.method.ui.selection();
+
+		selectLiving.option({ label: "🌿 Find my style!" }, () => {
+			props.method.routes.dwellings();
 		});
+
+		// video of community 
+		props.method.ui.image({ src: "/sections/landing/17_squared.png" });
+
+props.method.ui.text({ body: `
+### Solving the housing dilemma together, one triangle at a time.
+		
+Take a peak at our community, see what is going up and down at Relokida.
+		` });
+		
 	}
 
 	this.display = async function() {
