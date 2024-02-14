@@ -3,7 +3,7 @@ const path = require('path');
 const Jimp = require('jimp');
 
 // Get the folder path where the script is located
-const folderPath = __dirname;
+const folderPath = path.join(__dirname, "../");
 
 // Function to square up PNG images
 async function squareImages() {
