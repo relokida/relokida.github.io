@@ -15,19 +15,23 @@ module.exports = function(props) {
 		props.method.ui.text({ body: `
 ### Affordable, Scaleable, Liveable
 		
-Old innovations, new packaging, meet the geodesic dwellings of the future liberated from traditional 
-and overbearing construction costs, that fits your style.
+Old innovations, new packaging, meet the geodesic dwellings, that fits your style.
 			` });
 		
 		// video of beautiful domes, the architecture, the 3d printing
 		props.method.ui.image({ src: "/sections/landing/0_squared.png" });
 
+		props.method.ui.image({ src: "/sections/dwellings/1_squared.png" });
+
+		props.method.ui.image({ src: "/sections/dwellings/11_squared.png" });
+
+		props.method.ui.image({ src: "/sections/dwellings/18_squared.png" });
+
 		props.method.ui.text({ body: `
 ### What makes Relokida different?
 
-Housing that is altogether aligned with our anthropological roots, governed not by the power of 
-banking entities, but that of which is affordable, sustainable and decentralizing from conventions 
-only designed to ensnare.
+Offering a scaleable, renewable and decentralized 
+way to live, with a shelter that aligns with the geometry of nature.
 		` });
 
 
