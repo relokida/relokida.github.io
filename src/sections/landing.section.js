@@ -32,7 +32,7 @@ only designed to ensnare.
 
 
 		// image or video square of assemble process, 3d printing
-		props.method.ui.image({ src: "/sections/landing/13_squared.png" });
+		props.method.ui.image({ src: "/sections/landing/assembly/18_squared.png" });
 
 		props.method.ui.text({ body: `
 ### Assembled like a tent, rigid like a house, fit for any environment.
@@ -62,7 +62,7 @@ we've got you covered, and sheltered.
 		});
 
 		// video of community 
-		props.method.ui.image({ src: "/sections/landing/17_squared.png" });
+		props.method.ui.image({ src: "/sections/landing/assembly/7_squared.png" });
 
 props.method.ui.text({ body: `
 ### Solving the housing dilemma together, one triangle at a time.
