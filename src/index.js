@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import sections from "./sections";
 
 async function start() {
-	sections.AbbaHS().display();
+	sections.Landing().display();
 }
 
 // start the app :)

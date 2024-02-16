@@ -1,5 +1,5 @@
 module.exports = function(props) {
-	const element = props.ui.text({ body: "" });
+	const element = props.ui.text({ body: "", width: "full" });
 
 	element.option({ label: "..." }, () => {
 		

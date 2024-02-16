@@ -12,14 +12,13 @@ module.exports = function(props) {
 		props.method.components.Header({ ui: props.method.ui, routes: props.method.routes }); 
 		props.method.components.Menu({ ui: props.method.ui, routes: props.method.routes });
 
+		props.method.ui.image({ src: "/sections/landing/0_squared.png" });
+
 		props.method.ui.text({ body: `
 ### Affordable, Scaleable, Liveable
 		
 Old innovations, new packaging, meet the geodesic dwellings, that fits your style.
 			` });
-		
-		// video of beautiful domes, the architecture, the 3d printing
-		props.method.ui.image({ src: "/sections/landing/0_squared.png" });
 
 		props.method.ui.image({ src: "/sections/dwellings/1_squared.png" });
 
@@ -43,7 +42,7 @@ way to live, with a shelter that aligns with the geometry of nature.
 
 Each piece fits together like lego blocks, to form repeating patterns of triangles, and a structure that is 
 strong and rigid, ready for challenging weather conditions, or simply bluesky days.
-		` });
+		`, width: "full" });
 
 		// beauty shots of dome renders in natural environments, trees, mountains, lakes, streams.
 		props.method.ui.image({ src: "/sections/landing/21_squared.png" });

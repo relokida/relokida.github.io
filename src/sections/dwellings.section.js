@@ -17,7 +17,7 @@ module.exports = function(props) {
 		
 Relokida domes are made to scale with your dwelling style, whether living with a few or as if 
 Steve Martin in cheaper by the dozen, we've got a home for all gatherings.
-			` });
+			`, width: "full" });
 		
 		props.method.ui.image({ src: "/sections/dwellings/0_squared.png" });
 
