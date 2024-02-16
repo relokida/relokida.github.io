@@ -14,6 +14,13 @@ The philosophy of Relokida is one of self reliance, with that stance, every piec
 	` });
 
 	props.method.ui.text({ body: `
+### How are the domes weather proof?
+	
+With addition to the precision of the external panels, a line of silicone calk seals the seams making the 
+dome structure resistant against wind, water, rain and snow. Keeping the elements out and you dry inside.
+	` });
+
+	props.method.ui.text({ body: `
 ### What about the plumbing?
 
 Conventional plumbing systems require costly infrastructure, Relokida intends to use both composting toilets 
@@ -25,5 +32,12 @@ and gray water recapture as a means of turning waste to nutrient, and safe drain
 
 Utility power and city water will route underneath the decking of the structures and integrate into the "centerpieces" 
 which are the bathroom and kitchen units in the middle of the domes.
+	` });
+
+	props.method.ui.text({ body: `
+### What does HS (Helium Series) mean?
+
+The use of an elemental noble gas is relevant both to the structural stability of the dome, and the appearance of 
+protons in close proximity. Does that make the residents neutrons? In that case, I'm an advocate for nuclear family.
 	` });
 }

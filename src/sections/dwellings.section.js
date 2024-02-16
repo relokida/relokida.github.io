@@ -31,8 +31,8 @@ Two domes are better than one, an altogether humble dwelling fit for one or two
 intimate residence, an exceptional starting place that can grow alongside your living demands.
 		` });
 
-props.method.ui.selection().option({ label: "🌿 Totally fits me!" }, () => {
-	props.method.routes.selo();
+props.method.ui.selection().option({ label: "🌿 Learn More" }, () => {
+	props.method.routes.seloHS();
 });
 
 props.method.ui.image({ src: "/sections/dwellings/9_squared.png" });
@@ -47,8 +47,8 @@ Goldilox would choose this intermediate, enough room for 2 to 3 residence, and o
 scale and grow to meet your demands.
 		` });
 
-props.method.ui.selection().option({ label: "🌿 I need a goldilox!" }, () => {
-	props.method.routes.selo();
+props.method.ui.selection().option({ label: "🌿 Learn More" }, () => {
+	props.method.routes.omakaHS();
 });
 
 props.method.ui.image({ src: "/sections/dwellings/17_squared.png" });
@@ -64,8 +64,8 @@ crew. A pad fit for 3 to 4 residence, and of course options to scale larger if y
 in this case.
 		` });
 
-props.method.ui.selection().option({ label: "🌿 I am blessed by Abba!" }, () => {
-	props.method.routes.selo();
+props.method.ui.selection().option({ label: "🌿 Learn More" }, () => {
+	props.method.routes.abbaHS();
 });
 		
 	}

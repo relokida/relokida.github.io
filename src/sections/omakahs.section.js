@@ -12,16 +12,16 @@ module.exports = function(props) {
 		props.method.components.Header({ ui: props.method.ui, routes: props.method.routes }); 
 		props.method.components.Menu({ ui: props.method.ui, routes: props.method.routes });
 
-		props.method.ui.image({ src: "/sections/dwellings/0_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/9_squared.png" });
 
 		props.method.ui.text({ body: `
-### Selo HS
+### Omaka HS
 
-- 1 bed, 1 bath, 1 kitchen
-- 560 square feet of living space
-
-Two domes are better than one, an altogether humble dwelling fit for one or two 
-intimate residence, an exceptional starting place that can grow alongside your living demands.
+- 2 bed, 2 bath, 1 kitchen
+- 840 square feet of living space 
+		
+Goldilox would choose this intermediate, enough room for 2 to 3 residence, and of course room to 
+scale and grow to meet your demands.
 
 ### Specs (per dome)
 
@@ -60,11 +60,11 @@ Assembly
 - Required Equipment: 8 A- Frame Ladder, 12 Material Lift
 		` });
 
-		props.method.ui.image({ src: "/sections/dwellings/1_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/11_squared.png" });
 
-		props.method.ui.image({ src: "/sections/dwellings/2_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/13_squared.png" });
 
-		props.method.ui.image({ src: "/sections/dwellings/3_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/14_squared.png" });
 
 		props.method.ui.image({ src: "/sections/dwellings/4_squared.png" });
 

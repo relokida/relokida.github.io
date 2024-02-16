@@ -12,16 +12,17 @@ module.exports = function(props) {
 		props.method.components.Header({ ui: props.method.ui, routes: props.method.routes }); 
 		props.method.components.Menu({ ui: props.method.ui, routes: props.method.routes });
 
-		props.method.ui.image({ src: "/sections/dwellings/0_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/17_squared.png" });
 
 		props.method.ui.text({ body: `
-### Selo HS
+### Abba HS
 
-- 1 bed, 1 bath, 1 kitchen
-- 560 square feet of living space
-
-Two domes are better than one, an altogether humble dwelling fit for one or two 
-intimate residence, an exceptional starting place that can grow alongside your living demands.
+- 3 bed, 3 bath, 1 kitchen
+- 1120 square feet of living space 
+		
+Abba is smiling down on you, not in a condescending way of course! Some of us need room for our 
+crew. A pad fit for 3 to 4 residence, and of course options to scale larger if you're the go big or go home, literally 
+in this case.
 
 ### Specs (per dome)
 
@@ -60,11 +61,11 @@ Assembly
 - Required Equipment: 8 A- Frame Ladder, 12 Material Lift
 		` });
 
-		props.method.ui.image({ src: "/sections/dwellings/1_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/18_squared.png" });
 
-		props.method.ui.image({ src: "/sections/dwellings/2_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/19_squared.png" });
 
-		props.method.ui.image({ src: "/sections/dwellings/3_squared.png" });
+		props.method.ui.image({ src: "/sections/dwellings/20_squared.png" });
 
 		props.method.ui.image({ src: "/sections/dwellings/4_squared.png" });
 
