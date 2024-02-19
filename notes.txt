@@ -1,3 +1,13 @@
+We have a baseline presentable "site" primordial, an it looks decent, especially with the update to ui1. There are definitely things to add, little spiffies here and there. I want to discuss the hurdles and challenges associated with bringing the company to full service. The main innovations beyond the dome designs themselves is really considering the development of the JIT pellet to filament extrusion system. ChatGPT agrees with me upon the potential advantages of the system, but I think we'll put that out there and allow others to work with us, in a kind of community open source way, bring about the conceptual designs. So between finishing the dome's initial designs and the JIT concepts, we'll continue to conceptualize how we'll get from a to b in terms of bringing Relokida to a full service state.
+
+Lastly, and more down the road is the full self reliance of water collection via atmospheric water generators. For now it's more of a dream on top of the dream of even building the dome structures.
+
+So the first two are more pressing, and we'll continue to develop for both. But I think with the right community, and projects we'll bring Relokida to a serviceable state.
+
+So those will be our main objectives in the process of developing the service. Of course we can continue to elaborate what we're doing, and build a KS page to further help us elucidate the costs, and what we actually need funding wise to bring Relokida to it's full service state. I feel like it really will occur in steps and needs further consideration and truly pragmatic and physical testing before we can even move forward.
+
+So - baseline designs of the helium series dome, and the conceptualization of the JIT jk1 pellet to filament extrusion system, lastly is further presentation, visualization, inspiration, renderings of how and what the domes could look like. 
+__
 It's really shaping up, so lastly will be an invite to the discord community, talk about the hurdles and obstacles associated and update ui1 to use our most advanced layout system.
 __
 More interactables too, would make it interesting. Objects they can rotate around, look at from all angles.
