@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Main/Environment.tres" type="Environment" id=3]
+[ext_resource path="res://Levels/Main/L_Main.gd" type="Script" id=4]
+[ext_resource path="res://textures/grass.jpg" type="Texture" id=5]
+[ext_resource path="res://dome.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://scenes/dm11.cluster.tscn" type="PackedScene" id=7]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 18, 18, 1 )
+
+[node name="L_Main" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.728291, 2, 18.8729 )
+
+[node name="ArenaGeometry" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="ArenaGeometry"]
+transform = Transform( 25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -1, 0 )
+use_collision = true
+material = SubResource( 1 )
+
+[node name="Lighting" type="Node" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = ExtResource( 3 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Lighting"]
+transform = Transform( -0.544835, -0.341239, 0.76597, 0.725084, 0.267108, 0.634749, -0.421198, 0.901227, 0.101897, -2.49685, 12.1284, -1.08475 )
+light_color = Color( 1, 0.403922, 0.0117647, 1 )
+shadow_enabled = true
+shadow_bias = 0.05
+directional_shadow_max_distance = 250.0
+
+[node name="dm11cluster" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.226, 0, -0.712 )
+
+[node name="dome" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.777, 0, -10.617 )
+mesh = ExtResource( 6 )
