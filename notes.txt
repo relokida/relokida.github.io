@@ -1,2 +1,10 @@
+https://www.reddit.com/r/godot/comments/vpp7yb/trying_to_import_a_gtlf_as_a_mesh_instead_of_the/?rdt=53344
+
+Some comments on how to apply a mesh to a .glb file.
+__
+https://www.youtube.com/watch?v=nh0iwfuO8AE
+
+So pretty straightforward adding a mesh, as a child of the .obj file. As for .glb files, apparently they have to be dug into more to apply the mesh. Otherwise, it's quite straightforward. 
+__
 https://free3d.com
 www.polyhaven.com
