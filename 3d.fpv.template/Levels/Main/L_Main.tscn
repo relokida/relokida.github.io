@@ -1,11 +1,17 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/grassland/parts/dm11.pine.v1.01.glb" type="PackedScene" id=2]
 [ext_resource path="res://Levels/Main/Environment.tres" type="Environment" id=3]
 [ext_resource path="res://Levels/Main/L_Main.gd" type="Script" id=4]
 [ext_resource path="res://textures/grass.jpg" type="Texture" id=5]
 [ext_resource path="res://dome.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://scenes/dm11.cluster.tscn" type="PackedScene" id=7]
+[ext_resource path="res://objects/grassland/parts/dm11.rock.sm.v1.01.glb" type="PackedScene" id=8]
+[ext_resource path="res://objects/grassland/parts/dm11.rock.lg.v2.01.glb" type="PackedScene" id=9]
+[ext_resource path="res://objects/grassland/parts/dm11.rock.lg.v1.01.glb" type="PackedScene" id=10]
+[ext_resource path="res://objects/grassland/parts/dm11.pine.v2.01.glb" type="PackedScene" id=11]
+[ext_resource path="res://objects/grassland/parts/dm11.rock.sm.v2.01.glb" type="PackedScene" id=12]
 
 [sub_resource type="CylinderMesh" id=1]
 
@@ -45,3 +51,108 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.226,
 [node name="dome" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1, 0, -15.0979 )
 mesh = ExtResource( 6 )
+
+[node name="dm11pinev201" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4297, 0, -4.38524 )
+
+[node name="dm11pinev101" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9292, 0, 5.35925 )
+
+[node name="dm11pinev202" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4642, 3.8147e-06, 6.67208 )
+
+[node name="dm11pinev102" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11296, -1.90735e-06, -24.4677 )
+
+[node name="dm11pinev203" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.56857, 0, -17.7392 )
+
+[node name="dm11pinev103" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77717, 1.90735e-06, -16.0776 )
+
+[node name="dm11pinev204" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0506, -3.8147e-06, -20.5631 )
+
+[node name="dm11pinev104" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8352, -1.90735e-06, -9.13523 )
+
+[node name="dm11pinev205" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9544, 0, -9.66234 )
+
+[node name="dm11pinev105" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.6948, -1.90735e-06, 0.0789185 )
+
+[node name="dm11pinev206" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0514, 0, -2.18022 )
+
+[node name="dm11pinev106" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.613, -1.90735e-06, 8.1938 )
+
+[node name="dm11pinev207" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9471, 0, 6.67043 )
+
+[node name="dm11pinev107" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.722, -1.90735e-06, 14.8954 )
+
+[node name="dm11pinev208" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.7838, 3.8147e-06, 13.8916 )
+
+[node name="dm11pinev108" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.02116, 0, 11.0427 )
+
+[node name="dm11pinev209" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.97817, 3.8147e-06, 22.3162 )
+
+[node name="dm11pinev109" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4582, 0, 14.9942 )
+
+[node name="dm11pinev210" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.76, 0, -4.72253 )
+
+[node name="dm11pinev110" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.24833, -1.90735e-06, -22.7848 )
+
+[node name="dm11rocklgv201" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7236, -1.90735e-06, -2.03101 )
+
+[node name="dm11rocksmv101" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6377, 0, 10.8562 )
+
+[node name="dm11rocksmv102" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1854, -1.90735e-06, -6.15446 )
+
+[node name="dm11rocksmv201" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.09088, -1.90735e-06, -20.4065 )
+
+[node name="dm11rocksmv103" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6436, -3.8147e-06, -16.6188 )
+
+[node name="dm11rocklgv202" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2775, -1.90735e-06, -14.1216 )
+
+[node name="dm11rocklgv101" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0419, -3.8147e-06, -3.89727 )
+
+[node name="dm11rocksmv104" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9653, -3.8147e-06, 3.75375 )
+
+[node name="dm11rocksmv202" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1489, 0, 11.8952 )
+
+[node name="dm11pinev111" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2505, 0, 16.2131 )
+
+[node name="dm11pinev211" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.40016, 3.8147e-06, 22.7925 )
+
+[node name="dm11pinev112" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.27993, 0, 15.9567 )
+
+[node name="dm11pinev212" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.213983, -3.8147e-06, 24.2388 )
+
+[node name="dm11rocklgv203" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.35468, 0, 17.3212 )
+
+[node name="dm11rocksmv105" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.03122, 3.8147e-06, 19.2341 )
