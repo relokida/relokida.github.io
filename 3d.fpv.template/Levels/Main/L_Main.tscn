@@ -1,34 +1,36 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://objects/grassland/parts/dm11.pine.v1.01.glb" type="PackedScene" id=2]
 [ext_resource path="res://Levels/Main/Environment.tres" type="Environment" id=3]
 [ext_resource path="res://Levels/Main/L_Main.gd" type="Script" id=4]
-[ext_resource path="res://textures/grass.jpg" type="Texture" id=5]
+[ext_resource path="res://textures/terrain.grass.png" type="Texture" id=5]
 [ext_resource path="res://dome.obj" type="ArrayMesh" id=6]
-[ext_resource path="res://scenes/dm11.cluster.tscn" type="PackedScene" id=7]
 [ext_resource path="res://objects/grassland/parts/dm11.rock.sm.v1.01.glb" type="PackedScene" id=8]
 [ext_resource path="res://objects/grassland/parts/dm11.rock.lg.v2.01.glb" type="PackedScene" id=9]
 [ext_resource path="res://objects/grassland/parts/dm11.rock.lg.v1.01.glb" type="PackedScene" id=10]
 [ext_resource path="res://objects/grassland/parts/dm11.pine.v2.01.glb" type="PackedScene" id=11]
 [ext_resource path="res://objects/grassland/parts/dm11.rock.sm.v2.01.glb" type="PackedScene" id=12]
+[ext_resource path="res://scenes/dm12assetsolar01.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/dm15cluster02.tscn" type="PackedScene" id=14]
 
 [sub_resource type="CylinderMesh" id=1]
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 5 )
-uv1_scale = Vector3( 25, 25, 1 )
+uv1_scale = Vector3( 26, 26, 1 )
 
 [node name="L_Main" type="Spatial"]
 script = ExtResource( 4 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.728291, 2, 18.8729 )
+speed = 8
 
 [node name="ArenaGeometry" type="Spatial" parent="."]
 
 [node name="CSGMesh" type="CSGMesh" parent="ArenaGeometry"]
-transform = Transform( 30, 0, 0, 0, 0.25, 0, 0, 0, 30, 0, -0.25, 0 )
+transform = Transform( 45, 0, 0, 0, 0.25, 0, 0, 0, 45, 0, -0.25, 0 )
 use_collision = true
 mesh = SubResource( 1 )
 material = SubResource( 2 )
@@ -44,9 +46,6 @@ light_color = Color( 1, 0.403922, 0.0117647, 1 )
 shadow_enabled = true
 shadow_bias = 0.05
 directional_shadow_max_distance = 250.0
-
-[node name="dm11cluster" parent="." instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.226, 0, -0.712 )
 
 [node name="dome" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1, 0, -15.0979 )
@@ -84,12 +83,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.6948, -1.90735e-06, 0.07891
 
 [node name="dm11pinev206" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0514, 0, -2.18022 )
-
-[node name="dm11pinev106" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.613, -1.90735e-06, 8.1938 )
-
-[node name="dm11pinev207" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9471, 0, 6.67043 )
 
 [node name="dm11pinev107" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.722, -1.90735e-06, 14.8954 )
@@ -133,12 +126,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2775, -1.90735e-06, -14.121
 [node name="dm11rocklgv101" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0419, -3.8147e-06, -3.89727 )
 
-[node name="dm11rocksmv104" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9653, -3.8147e-06, 3.75375 )
-
-[node name="dm11rocksmv202" parent="." instance=ExtResource( 12 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1489, 0, 11.8952 )
-
 [node name="dm11pinev111" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2505, 0, 16.2131 )
 
@@ -156,3 +143,114 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.35468, 0, 17.3212 )
 
 [node name="dm11rocksmv105" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.03122, 3.8147e-06, 19.2341 )
+
+[node name="dm12assetsolar01" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.359753, 0, 0.933048, 0, 1, 0, -0.933048, 0, 0.359753, 15.1294, 0, 12.4574 )
+
+[node name="dm11pinev106" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5594, 3.8147e-06, 28.7931 )
+
+[node name="dm11pinev207" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.646, 3.8147e-06, 36.1249 )
+
+[node name="dm11rocklgv102" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.312, 3.8147e-06, 32.9426 )
+
+[node name="dm11rocklgv204" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8053, 0, 40.1455 )
+
+[node name="dm11rocksmv104" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7757, 3.8147e-06, 29.7988 )
+
+[node name="dm11pinev113" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.9409, 1.90735e-06, -5.85478 )
+
+[node name="dm11pinev213" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.997, 1.90735e-06, -0.488542 )
+
+[node name="dm11pinev114" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34.4772, 3.8147e-06, 1.86508 )
+
+[node name="dm11pinev115" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.3833, 0, 6.69201 )
+
+[node name="dm11rocksmv106" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.0231, 1.90735e-06, -8.72462 )
+
+[node name="dm11rocksmv202" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.7676, 0, 2.97977 )
+
+[node name="dm11pinev116" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4328, 0, -35.9494 )
+
+[node name="dm11pinev214" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.793, 0, -29.1417 )
+
+[node name="dm11rocklgv103" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.191, 0, -35.2172 )
+
+[node name="dm11rocksmv203" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8475, -3.8147e-06, -32.2265 )
+
+[node name="dm11pinev215" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1277, 0, -31.2316 )
+
+[node name="dm11pinev117" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.232, -1.90735e-06, -40.622 )
+
+[node name="dm11pinev118" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4995, 0, -25.1441 )
+
+[node name="dm11pinev216" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.9453, -1.90735e-06, -23.8441 )
+
+[node name="dm11rocklgv205" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9039, 0, -26.2317 )
+
+[node name="dm11pinev217" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5555, 0, -31.0752 )
+
+[node name="dm11pinev119" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9468, 0, -32.1796 )
+
+[node name="dm11rocksmv107" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8735, 0, -25.5098 )
+
+[node name="dm11pinev120" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2509, 3.8147e-06, 33.8775 )
+
+[node name="dm11pinev121" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0765, 0, 27.3876 )
+
+[node name="dm11pinev122" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4749, 3.8147e-06, 26.1237 )
+
+[node name="dm11pinev123" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.9974, -3.8147e-06, 16.8633 )
+
+[node name="dm11pinev124" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39.9137, 0, 10.0754 )
+
+[node name="dm11pinev125" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.4937, 0, 17.5118 )
+
+[node name="dm11pinev218" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1665, 7.62939e-06, 22.7176 )
+
+[node name="dm11rocklgv104" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.8626, 3.8147e-06, 7.43741 )
+
+[node name="dm11pinev219" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.7511, -3.8147e-06, 21.1596 )
+
+[node name="dm11rocksmv108" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.891, 7.62939e-06, 29.2329 )
+
+[node name="dm11rocksmv204" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.0099, 0, 14.1089 )
+
+[node name="dm11pinev126" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7254, 3.8147e-06, 35.1011 )
+
+[node name="dm15cluster02" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.229785, 9.53674e-07, 4.95205 )

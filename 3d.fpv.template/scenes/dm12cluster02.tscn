@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://textures/flooring.wood.png" type="Texture" id=1]
+[ext_resource path="res://objects/dm12.cluster.02.glb" type="PackedScene" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 16, 16, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+albedo_color = Color( 0.180392, 0.615686, 0.811765, 0.309804 )
+
+[node name="dm12cluster02" instance=ExtResource( 2 )]
+
+[node name="dm12clusterdecks01" parent="." index="0"]
+material/0 = SubResource( 1 )
+
+[node name="dm12clusterwindows01" parent="." index="5"]
+material/0 = SubResource( 2 )

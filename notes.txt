@@ -1,3 +1,5 @@
+I'm thinking we'll tell a story, particularly showing how the dome is assembled, with the fully assembled dome in the center with the vehicle (SUV) with trailer and components on it. So around the perimeter, we'll have domes in the process of being constructed to demonstrate how it's pulled together, and in the center is the fully assembled dome, with furnishings, interior. 
+__
 https://www.reddit.com/r/godot/comments/vpp7yb/trying_to_import_a_gtlf_as_a_mesh_instead_of_the/?rdt=53344
 
 Some comments on how to apply a mesh to a .glb file.

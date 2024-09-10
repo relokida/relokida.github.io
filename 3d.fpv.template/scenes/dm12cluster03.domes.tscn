@@ -1,0 +1,51 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://texture.02/dm12.texture.window_resized.png" type="Texture" id=1]
+[ext_resource path="res://textures/wood_floor_diff_1k.jpg" type="Texture" id=2]
+[ext_resource path="res://textures/polystyrene_disp_1k.png" type="Texture" id=3]
+[ext_resource path="res://objects/dm12.cluster.03.glb" type="PackedScene" id=4]
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 26, 26, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.509804, 0.509804, 0.509804, 0 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.509804, 0.509804, 0.509804, 0 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 1, 1, 1, 0 )
+albedo_texture = ExtResource( 3 )
+uv1_scale = Vector3( 26, 26, 1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 18, 18, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0.576471 )
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 26, 26, 1 )
+
+[node name="dm12cluster03" instance=ExtResource( 4 )]
+
+[node name="dm12clusterdecks01" parent="." index="0"]
+material/0 = SubResource( 8 )
+
+[node name="dm12clustershims01" parent="." index="1"]
+material/0 = SubResource( 6 )
+
+[node name="dm12clusterframes01" parent="." index="2"]
+material/0 = SubResource( 7 )
+
+[node name="dm12clusterdomes01" parent="." index="3"]
+material/0 = SubResource( 10 )
+
+[node name="dm12clusterdoors01" parent="." index="4"]
+material/0 = SubResource( 9 )
+
+[node name="dm12clusterwindows01" parent="." index="5"]
+material/0 = SubResource( 4 )
